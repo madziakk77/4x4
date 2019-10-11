@@ -9,14 +9,21 @@ plik = open("pop4x4.txt", "wb")
 for a1 in row_all[0:41]:
  print a1
  for a2 in row_all[1:42]:
-  for a3 in row_all[2:43]:
-   for a4 in row_all[3:44]:
-    for a5 in row_all[4:45]:
-     for a6 in row_all[5:46]:
-      for a7 in row_all[6:47]:
-       for a8 in row_all[7:48]:
-        ttt = [a1, a2, a3, a4, a5, a6, a7, a8]
-        all00 = all00 + 1
-#        plik.write("\n" + str(ttt)
+  if (a2 > a1):
+   for a3 in row_all[2:43]:
+    if (a3 > a2):
+     for a4 in row_all[3:44]:
+      if (a4 > a3):
+       for a5 in row_all[4:45]:
+        if (a5 > a4):
+         for a6 in row_all[5:46]:
+          if (a6 > a5):
+           for a7 in row_all[6:47]:
+            if (a7 > a6):
+             for a8 in row_all[7:48]:
+              if (a8 > a7):
+               ttt = [a1, a2, a3, a4, a5, a6, a7, a8]
+               all00 = all00 + 1
+#               plik.write("\n" + str(ttt)
 plik.close()
 print all00
