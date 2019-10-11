@@ -24,6 +24,6 @@ for a1 in row_all[0:41]:
               if (a8 > a7):
                ttt = [a1, a2, a3, a4, a5, a6, a7, a8]
                all00 = all00 + 1
-#               plik.write("\n" + str(ttt)
+#               plik.write("\n" + str(ttt))
 plik.close()
 print all00
